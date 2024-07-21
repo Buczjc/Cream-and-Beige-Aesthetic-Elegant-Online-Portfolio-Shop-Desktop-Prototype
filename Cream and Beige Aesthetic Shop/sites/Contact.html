@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Borcelle</title>
+    <link
+      rel="shortcut icon"
+      href="../images/site_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css-js/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <header>
+      <div class="border">
+        <div class="logo">
+          <img src="../images/site_logo.png" alt="Borcelle-logo" />
+          <h2>Borcelle</h2>
+        </div>
+
+        <nav>
+          <!-- Sidebar (for smaller screens) -->
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href=""
+                ><img
+                  src="../images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="X"
+                  style="background-color: black; border-radius: 100%"
+              /></a>
+            </li>
+            <li>
+              <a href="Home.html">Home</a>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li>
+              <a
+                href="Contact.html"
+                style="
+                  color: var(--nav-bar-clicked);
+                  font-weight: 600;
+                  font-size: 1em;
+                "
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Navbar -->
+          <ul>
+            <li class="hideOnMobile">
+              <a href="Home.html">Home</a>
+            </li>
+            <li class="hideOnMobile"><a href="About.html">About</a></li>
+            <li class="hideOnMobile"><a href="Courses.html">Courses</a></li>
+            <li class="hideOnMobile"><a href="Shop.html">Shop</a></li>
+            <li class="hideOnMobile">
+              <a
+                href="Contact.html"
+                style="
+                  color: var(--nav-bar-clicked);
+                  font-weight: 600;
+                  font-size: 1em;
+                "
+                >Contact</a
+              >
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"
+                ><img
+                  src="../images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="S-B"
+                  style="background-color: #d1c8c1"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="contact-page-container">
+        <section>
+          <div class="contact-header">
+            <h1>Contact</h1>
+            <h4>Please fill out the form below to send us an email.</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="contact-email">
+              <h3>E-mail:</h3>
+              <p>hello@reallygreatsite.com</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="contact-form">
+            <form action="#">
+              <input type="text" placeholder="Name" required /> <br />
+
+              <input type="email" placeholder="E-mail" required />
+              <br />
+
+              <input type="text" placeholder="Subject" required />
+              <br />
+
+              <textarea placeholder="Message" rows="4" required></textarea>
+              <br />
+              <div class="btn-position-end">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Transition Animation -->
+    <script src="../css-js/scrollAnimation.js"></script>
+  </body>
+</html>

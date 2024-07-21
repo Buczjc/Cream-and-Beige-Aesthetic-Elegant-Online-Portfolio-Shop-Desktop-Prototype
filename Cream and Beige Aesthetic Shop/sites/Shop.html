@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Borcelle</title>
+    <link
+      rel="shortcut icon"
+      href="../images/site_logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css-js/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <header>
+      <div class="border">
+        <div class="logo">
+          <img src="../images/site_logo.png" alt="Borcelle-logo" />
+          <h2>Borcelle</h2>
+        </div>
+
+        <nav>
+          <!-- Sidebar (for smaller screens) -->
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href=""
+                ><img
+                  src="../images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="X"
+                  style="background-color: black; border-radius: 100%"
+              /></a>
+            </li>
+            <li>
+              <a href="Home.html">Home</a>
+            </li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li>
+              <a
+                href="Shop.html"
+                style="
+                  color: var(--nav-bar-clicked);
+                  font-weight: 600;
+                  font-size: 1em;
+                "
+                >Shop</a
+              >
+            </li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Navbar -->
+          <ul>
+            <li class="hideOnMobile">
+              <a href="Home.html">Home</a>
+            </li>
+            <li class="hideOnMobile"><a href="About.html">About</a></li>
+            <li class="hideOnMobile"><a href="Courses.html">Courses</a></li>
+            <li class="hideOnMobile">
+              <a
+                href="Shop.html"
+                style="
+                  color: var(--nav-bar-clicked);
+                  font-weight: 600;
+                  font-size: 1em;
+                "
+                >Shop</a
+              >
+            </li>
+            <li class="hideOnMobile"><a href="Contact.html">Contact</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"
+                ><img
+                  src="../images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                  style="background-color: #d1c8c1"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="shop-course-container">
+        <section>
+          <div class="shop-course-header">
+            <h1>Online Shop</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </section>
+        <section class="shop-items-flex">
+          <div class="shop-course-item-container">
+            <div class="item-1">
+              <div class="item1-img-block">
+                <img
+                  src="../images/shop-img-sample-1.png"
+                  alt="shop-img-sample-1"
+                />
+              </div>
+              <div class="item-content">
+                <h3>Oil Soap</h3>
+                <h4>$5.00</h4>
+                <a href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item-2">
+              <div class="item2-img-block">
+                <img
+                  src="../images/shop-img-sample-2.png"
+                  alt="shop-img-sample-2"
+                />
+              </div>
+              <div class="item-content">
+                <h3>Organic Soap</h3>
+                <h4>$5.00</h4>
+                <a href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item-3">
+              <div class="item3-img-block">
+                <img
+                  src="../images/shop-img-sample-3.png"
+                  alt="shop-img-sample-3"
+                />
+              </div>
+              <div class="item-content">
+                <h3>Glycerin Soap</h3>
+                <h4>$5.00</h4>
+                <a href="#">Add To Cart</a>
+              </div>
+            </div>
+
+            <div class="item-4">
+              <div class="item4-img-block">
+                <img
+                  src="../images/shop-img-sample-4.png"
+                  alt="shop-img-sample-4"
+                />
+              </div>
+              <div class="item-content">
+                <h3>Olive oil Soap</h3>
+                <h4>$5.00</h4>
+                <a href="#">Add To Cart</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Transition Animation -->
+    <script src="../css-js/scrollAnimation.js"></script>
+  </body>
+</html>
